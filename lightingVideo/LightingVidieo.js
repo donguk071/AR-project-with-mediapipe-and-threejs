@@ -1,10 +1,10 @@
-import * as THREE from '../node_modules/three/build/three.module.js';
-import {OrbitControls} from '../node_modules/three/examples/jsm/controls/OrbitControls.js'; //import map 사용해야 사용이 가능하다
+import * as THREE from '../../node_modules/three/build/three.module.js';
+import {OrbitControls} from '../../node_modules/three/examples/jsm/controls/OrbitControls.js'; //import map 사용해야 사용이 가능하다
 import {TRIANGULATION} from './triangulation.js';
 
-import {Line2} from '../node_modules/three/examples/jsm/lines/Line2.js';
-import {LineMaterial} from '../node_modules/three/examples/jsm/lines/LineMaterial.js';
-import {LineGeometry} from '../node_modules/three/examples/jsm/lines/LineGeometry.js';
+import {Line2} from '../../node_modules/three/examples/jsm/lines/Line2.js';
+import {LineMaterial} from '../../node_modules/three/examples/jsm/lines/LineMaterial.js';
+import {LineGeometry} from '../../node_modules/three/examples/jsm/lines/LineGeometry.js';
 
 //make two renderer
 const renderer = new THREE.WebGLRenderer();
