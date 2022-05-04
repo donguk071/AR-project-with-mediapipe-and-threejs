@@ -269,7 +269,7 @@ function mouseWheel(e){
   camera_ar.near += e.deltaY* 0.01;
   camera_ar.updateProjectionMatrix();
   //2가 아닌 3~4로하면 np 전체에서 움직이지만 설명 불가 
-  let PS = SS.set((e.clientX/window.innerWidth)*3-1,-(e.clientY/window.innerHeight)*3+1,-1);//SS to PS
+  let PS = SS.set(e.clientX/window.innerWidth*2-1,-e.clientY/window.innerHeight*2+1,-1);//SS to PS
   let np = PS.unproject(camera_ar) //ps2np
   ws = np
 
@@ -289,7 +289,7 @@ function mouseUpHandler(e){
 function mouseMoveHandler(e){
     if(mouse_click){ //only work when mouse clicked
         //2가 아닌 3~4로하면 np 전체에서 움직이지만 설명 불가 
-        let PS = SS.set((e.clientX/window.innerWidth)*3-1,-(e.clientY/window.innerHeight)*3+1,-1);//SS to PS
+        let PS = SS.set(e.clientX/window.innerWidth*2-1,-e.clientY/window.innerHeight*2+1,-1);//SS to PS
         let np = PS.unproject(camera_ar)
         ws = np
 
